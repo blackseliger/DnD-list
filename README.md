@@ -1,7 +1,7 @@
 # DnD List
 [![Build status](https://ci.appveyor.com/api/projects/status/kl746gl6fkk27isr?svg=true)](https://ci.appveyor.com/project/blackseliger/dnd-list)
 
-GP :rocket: https://blackseliger.github.io/Popovers/ :rocket:
+GP :rocket: https://blackseliger.github.io/DnD-list/ :rocket:
 
 **Important!**
 
