@@ -1,0 +1,191 @@
+
+
+/* trello styles */
+
+.trello__tables {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, calc(33% - 50px));
+  gap: 50px;
+  align-items: start;
+  
+}
+
+.trello__table {
+  background-color: bisque;
+  padding: 5px;
+}
+
+/* form styles */
+
+
+
+.sortable__open, .form__icon {
+  cursor: pointer;
+}
+
+.form-group {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+
+.form-group__label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: grey;
+  margin-bottom: 5px;
+}
+
+.form-group__input {
+  position: relative;
+  display: inline-flex;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+
+}
+
+.form-group__input .form-group__control {
+  width: 100%;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 17px 24px 13px 24px;
+}
+
+.form-group .form-group__input .form-group__control:focus {
+  border: 1px solid blueviolet;   
+  box-shadow: 0px 1px 1px rgba(51, 154, 240, 0.1);
+  outline: none;
+}
+
+.form-group__buttons {
+  margin-top: 10px;
+  display:flex;
+  justify-content: space-around;
+}
+
+.button {
+  height: 48px;
+  border-radius: 8px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
+  padding: 15px 40px;
+  border: none;
+  cursor: pointer
+}
+
+
+.button_primary {
+  background-color: #4263EB;
+  color: #FFFFFF;
+}
+
+.button_primary:hover {
+  background-color: #5028C6;
+}
+
+
+.form-hidden {
+  display: none;
+}
+
+/* SortableList styles */
+.sortable-list {
+  position: relative;
+  padding: 0;
+  margin: 12px 0;
+  list-style-type: none;
+}
+
+.sortable-list__item {
+  min-height: 60px;
+  background-color: var(--white);
+  list-style: none;
+  padding: 16px 16px 16px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  margin: 16px 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.sortable-list__item[data-grab-handle],
+.sortable-list__item [data-grab-handle] {
+  cursor: grab;
+}
+
+.sortable-list__item [data-delete-handle] {
+  cursor: pointer;
+}
+
+.sortable-list__item-arrow {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid var(--grey-light);
+  position: absolute;
+  left: 16px;
+  top: -50%;
+  transform: translate(0, -50%);
+}
+
+.sortable-list__item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--dark-blue);
+}
+
+.sortable-list__item-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.sortable-list__item-nav > a {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--blue);
+  display: inline-flex;
+  padding: 0 4px;
+  border-left: 1px solid var(--grey-light);
+}
+
+.sortable-list__item-nav > a:first-child {
+  border-left: none;
+}
+
+.sortable-list__item.sortable-list__item_dragging {
+  position: fixed;
+  max-width: 100%;
+  cursor: grabbing;
+  border: 1px solid var(--blue);
+  margin: 0;
+  z-index: 10000;
+}
+
+.sortable-list__placeholder {
+  border: 1px solid var(--blue);
+  margin: 3px 0;
+  border-radius: 4px;
+}
