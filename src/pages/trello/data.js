@@ -1,26 +1,26 @@
 export default [
   {
-    text: 'hehehehe',
+    text: 'hehe',
     count: 1,
   },
   {
-    text: 'hehehehe',
+    text: 'not hehe',
     count: 2,
   },
   {
-    text: 'hehehehe',
+    text: 'elden ring',
     count: 3,
   },
   {
-    text: 'hehehehe',
+    text: 'javasript',
     count: 4,
   },
   {
-    text: 'hehehehe',
+    text: 'test',
     count: 5,
   },
   {
-    text: 'hehehehe',
+    text: 'warhammer',
     count: 6,
   },
 ];

@@ -5,7 +5,7 @@ export default class Page {
     subElements = {};
     components = {};
 
-
+   
     constructor() {
         this.data = data
     }
@@ -32,11 +32,11 @@ export default class Page {
                 const element = document.createElement('li');
 
                 element.innerHTML = `
-                <span data-grab-handle>${item.text}</span>
+                <span>${item.text}</span>
                 <span data-delete-handle><img src="./assets/icons/handleDelete.svg"></span>
               `;
 
-              return element;
+                return element;
             })
         })
 
@@ -45,11 +45,11 @@ export default class Page {
                 const element = document.createElement('li');
 
                 element.innerHTML = `
-                <span data-grab-handle>${item.text}</span>
+                <span>${item.text}</span>
                 <span data-delete-handle><img src="./assets/icons/handleDelete.svg"></span>
               `;
 
-              return element;
+                return element;
             })
         })
 
@@ -58,11 +58,11 @@ export default class Page {
                 const element = document.createElement('li');
 
                 element.innerHTML = `
-                <span data-grab-handle>${item.text}</span>
+                <span>${item.text}</span>
                 <span data-delete-handle><img src="./assets/icons/handleDelete.svg"></span>
               `;
 
-              return element;
+                return element;
             })
         })
 
@@ -75,7 +75,6 @@ export default class Page {
 
     renderComponents() {
         Object.keys(this.components).forEach(component => {
-            console.log(component);
             const root = this.subElements[component];
             const { element } = this.components[component];
             root.append(element);
